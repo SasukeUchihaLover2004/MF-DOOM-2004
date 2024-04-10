@@ -1,0 +1,90 @@
+<html>
+<head>
+    <style>
+        /*Adicionando imagem de fundo(essa eu não acreditei) */
+        body {
+            background-image: url('Fundofantastik.jpg');
+            background-size: cover;
+        }
+
+        /*ID para estilizar uma tag específica */
+        #titulo {
+            font-weight: bold;
+            color: #005c1a;
+        }
+
+        /*Classe para estilizar mais de uma tag */
+        .texto-destaque {
+            color: #034414; /* Vermelho em hexadecimal */
+        }
+
+        /*Estilizar todos os exemplares de uma tag */
+        p {
+            font-style: italic;
+        }
+
+        /*Selecionar uma tag por ID e Classe ao mesmo tempo */
+        #titulo.first {
+            text-decoration: underline;
+        }
+
+        /*Efeito ao passar o mouse(toma!!!) */
+        .efeito:hover {
+            background-color: #067525;
+            color: #ffffff; 
+        }
+    </style>
+    <title>MF DOOM</title>
+</head>
+<body>
+   <!-- todo o texto -->
+    <img id="imagem" src="MF DOOM1.jpg">
+
+
+    <div class="first">
+    <h1 id="titulo">MF DOOM</h1>
+    </div>
+   
+    <p class="texto-destaque efeito">“Just remember all caps when you spell the man name”</p>
+   
+
+
+    <h2>Qual seu nome?</h2>
+   
+    <p class="texto-destaque efeito">Daniel Dumile, um rapper inglês.</p>
+   
+    <h3>Nascimento da lenda</h3>
+   
+    <p class="texto-destaque efeito">após a morte de seu irmão (Subroc), voltou para o mundo do rap como</span></p>
+
+    <p class="texto-destaque efeito"> MF DOOM, lançando seu primeiro album Operation: Doomsday (1999)</p>
+
+
+    <h2>Inspiração</h2>
+   
+    <p class="texto-destaque efeito">Caracterizou-se por usar uma máscara semelhante ao do personagem </p>
+    <p class="texto-destaque efeito">Doutor Destino, da Marvel Comics. Posteriormente, a Marvel exerce mais influências </p>
+    <p class="texto-destaque efeito">na carreira musical de Daniel Dumile.</p>
+   
+    <h3>Morte</h3>
+   
+    <p class="texto-destaque efeito">†1989–2020†</p>
+
+
+    <h3>Seu legado de vilania continua</h3>
+   
+    <p class="texto-destaque efeito">Esse site foi feito com carinho por dois fãs</p>
+
+    <!-- coloquei até audio -->
+    <audio id="audio" src="Rapp Snitch Knishes (feat. Mr. Fantastik).mp3"></audio>
+
+    <script>
+        // Função para reproduzir o áudio quando clicar na imagem
+        document.getElementById('imagem').addEventListener('click', function() {
+            document.getElementById('audio').play();
+        });
+        //<span style="background-color: #ffffff"></span>
+    </script>
+
+</body>
+</html>
